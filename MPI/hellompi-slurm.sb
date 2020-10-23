@@ -8,7 +8,6 @@
 #SBATCH --export=ALL
 #SBATCH -t 00:10:00
 
-#This job runs with 2 nodes, 128 cores per node for a total of 256 cores.
 ## Environment
 module purge
 module load openmpi/4.0.4
