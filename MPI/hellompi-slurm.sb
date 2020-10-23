@@ -2,7 +2,7 @@
 # modified for default Azure SLURM cluster
 #SBATCH --job-name="hellompi"
 #SBATCH --output="hellompi.%j.%N.out"
-#SBATCH --partition=compute
+#SBATCH --partition=hpc
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=8
 #SBATCH --export=ALL
@@ -11,7 +11,6 @@
 #This job runs with 2 nodes, 128 cores per node for a total of 256 cores.
 ## Environment
 module purge
-module load gcc/10.2.0
 module load openmpi/4.0.4
 
 ## Use srun to run the job
